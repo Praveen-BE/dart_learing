@@ -1,5 +1,6 @@
 void Variables() {
-  // Dart is a statically typed language, also supports like dynamic typing like javascript
+  // Dart is a statically typed language,
+  //also supports like dynamic typing like javascript
 
   /// var is used to declare a variable without specifying its data type,
   ///  Dart infers the data type based on the assigned value. Once assigned,
@@ -17,7 +18,8 @@ void Variables() {
   //   name = 123; // can't modify data type
   print(name);
 
-  /// using Object type variable can hold any data type and can be modified later
+  /// using Object type variable can
+  ///  hold any data type and can be modified later
   Object modify = "A String";
   modify = 123; // can modify data type
   print(modify);
@@ -37,9 +39,9 @@ void Variables() {
   print(nonNullable);
 
   int? lineCount;
-  print(lineCount == null);
+  print(lineCount == null); // true
   lineCount = 123;
-  print(lineCount == null);
+  print(lineCount == null); // false
 
   late String description; // its non nullable but we will initialize later
   //   print(description); // error: not initialized
@@ -51,18 +53,19 @@ void Variables() {
   lateVariabaleUsed();
 
   String readThermometer() {
-    print('Reading thermometer... Lazily');
+    print('Reading thermometer...');
     return '37°C';
   }
 
   // This is the program's only call to readThermometer().
   late String temperature =
-      readThermometer(); // Lazily initialized. the function is called only when the variable is used first time
-  //   print('The temperature is $temperature.');
+      readThermometer(); // Lazily initialized. the function is
+  //called only when the variable is used first time
+  print('The temperature is $temperature.');
 
-  String temperature2 =
-      readThermometer(); // Eagerly initialized. the function is called immediately even if the variable is not used
-  //   print('The temperature is $temperature2.');
+  String temperature2 = readThermometer(); // Eagerly initialized. the function
+  //is called immediately even if the variable is not used
+  print('The temperature is $temperature2.');
 
   // const - used to declare compile-time constants, whose values must be known at compile time and cannot be changed later.
   const pi = 3.14159;
@@ -144,9 +147,10 @@ void Variables() {
   }
 
   usingGenericFunction();
-}
+} // closing Variables function
 
-// Generic examples with wildcard type parameter names it need to be written outside function
+// Generic examples with wildcard type parameter
+// names it need to be written outside all function
 class T<_> {
   void sayHello() => print("Hello from class T!");
 }
