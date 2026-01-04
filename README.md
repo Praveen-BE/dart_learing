@@ -33,11 +33,16 @@ dart main.dart
 
 ### Language Fundamentals:-
 
+- Variables
+    
+    dart has type safe code and also support like javascript without explicitily specifing 
+, constants, and data types
+
+```dart
 
 
-- Variables, constants, and data types
 
-
+```
 
 Operators and control flow (if, switch, loops)
 
