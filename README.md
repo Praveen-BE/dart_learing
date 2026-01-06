@@ -33,7 +33,7 @@ dart main.dart
 
 ### Language Fundamentals:-
 
-- Variables
+### Variables
 
 
 ####  1. var and Type Inference
@@ -256,7 +256,9 @@ class T<_> {
 
 </details>
 
-Operators and control flow (if, switch, loops)
+
+### control flow (if, switch, loops) and Operators
+
 
 
 
